@@ -19,7 +19,7 @@ steps:
  
 - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
   entrypoint: gcloud
-  args: ['run', 'deploy','go-microservice', '--image','gcr.io/valiant-monitor-348818/go-microservice', '--region','us-central1', '--add-cloudsql-instances', 'smart-momentum-348818:us-central1:mypostgres','--platform','managed', '--port','8080', '--allow-unauthenticated']
+  args: ['run', 'deploy','go-microservice', '--image','gcr.io/smart-momentum-348818/go-microservice', '--region','us-central1', '--add-cloudsql-instances', 'smart-momentum-348818:us-central1:mypostgres','--platform','managed', '--port','8080', '--allow-unauthenticated']
 images:
 - gcr.io/smart-momentum-348818/go-microservice
 - gcr.io/smart-momentum-348818/pgadmin

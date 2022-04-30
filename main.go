@@ -174,7 +174,7 @@ func main() {
 
 	//Option 4
 	//Database application running on Google Cloud Platform.
-	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=/cloudsql/massive-amulet-348715:us-central1:mypostgres sslmode=disable port = 5432"
+	db_connection := "user=postgres dbname=chicago_business_intelligence password=root host=/cloudsql/molten-reserve-348815:us-central1:mypostgres sslmode=disable port = 5432"
 	db, err := sql.Open("postgres", db_connection)
 	if err != nil {
 		panic(err)
@@ -230,7 +230,7 @@ func GetTaxiTrips(db *sql.DB) {
 	// Get your geocoder.ApiKey from here :
 	// https://developers.google.com/maps/documentation/geocoding/get-api-key?authuser=2
 
-	geocoder.ApiKey = "AIzaSyA_Vy0Ocd9Ixn4PZNxldNJy2Qj-UyeECGc"
+	geocoder.ApiKey = "AIzaSyC518dHyiLNJQvYpA0J3W4jxC3NjBCDR_Q"
 
 	drop_table := `drop table if exists taxi_trips`
 	_, err := db.Exec(drop_table)
